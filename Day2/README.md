@@ -132,7 +132,9 @@ Type 1 : Bare-Metal Hypervisor
 				- this type of virtualization supports the high availability and data consistancy of service. 
 
 
-		Live Migeration:				-------------STORAGE---------
+		- Live Migeration:
+		------------------
+										-------------STORAGE---------
 										|							|
 					|Guest OS1|	|Guest OS1|				|Guest OS1||Guest OS1|
 					-----------------------				----------------------
@@ -143,14 +145,15 @@ Type 1 : Bare-Metal Hypervisor
 			  H2 and vice versa.
 			- Provide Fast Recovery time with minimal down time.
 
-		Storage:
-		
-				1. Backup: by cloning virtual machine 'Full backup' the same size of the source Virtual machine
+		- Storage:
+		----------
+				1. Backup/clone: by cloning virtual machine 'Full backup' the same size of the source Virtual machine
 				2. Snapshot: copying of index but the data still exists, if there is any change (Edit/Delete/Add) in file  
 				   system, copy this change to snapshot, to keep track all changes in file system. according to processes that 
 				   run on virtual machine: when user takes snapshot it follows the "Snapshot Algorithm" or Chandy–Lamport algorithm
 				   is used to track all running processes at specific time and build save all running processes states in vector where 
 				   each process has list of states and communication with other processes on the system.			
+
 			
 			
 Type 2: Hosted Hypervisor
@@ -186,20 +189,66 @@ Network Virtualization:
 -----------------------
 		
 		
-				VM1 | VM2		VM3| .......
-				----------		--------------
-				SW switch       SW switch
-				Using DHCP		Using DHCP
-					H1				H2
-				---------		--------------
-				   NIC1			  NIC2
-				----------		--------------
-					|				|
-					|	--------	|
-					----|SWITCH|-----	
+				VM1 | VM2			VM3| .......
+				----------			--------------
+				SW switch/Router    SW switch/Router
+				- Using Bridging	- Using Bridging
+				- Using NAT			- Using NAT
+					H1					H2
+				---------			--------------
+				   NIC1			  		NIC2
+				----------			--------------
+					|					|
+					|	--------		|
+					----|SWITCH|---------	
 						--------										---------		
 							|-------------------------------------------|YOUR PC|
 																		---------	
-
-
+		- Virtual Isolated network (Host Only)
 			
+		- Bridged:
+				
+				A bridge is a device that separates two or more network segments within one logical network connected directly to physical host.
+				
+		- Network address translation:
+				
+				(NAT) is a methodology of remapping one IP address space into another by modifying network address information in
+				Internet Protocol (IP) datagram packet headers while they are in transit across a traffic routing device.
+
+		
+					10.0.0.5	 
+				PC1 --------------------	Local Network
+					10.0.0.6			|----------------->|Router|---->Ineternet--->www.google.com (8.8.8.8)
+				PC2	--------------------	10.0.0.1		(Public IP of router)42.2.1.3
+		
+					
+					Router:
+					change the ip of PC1 address to router address in destination and route it back to PC1 after recieving packets from 8.8.8.8.
+																
+							Source 				Distenationn
+							10.0.0.5			8.8.8.8
+					
+		- VLAN: Virtual LAN:
+					
+					A VLAN is a group of end stations with a common set of requirements, independent of physical location. VLANs have 
+					the same attributes as a physical LAN but allow you to group end stations even if they are not located physically 
+					on the same LAN segment.
+							
+							----------------------------------
+							|PC1 						PC2  |
+							|Eth0		VLAN			Eth1 |
+							----------------------------------
+											|
+								|---------ROUTER----------|
+											|
+								PC3--------------------PC4			
+
+
+Storage Virtualization:
+-----------------------
+
+
+
+Application Virtualization:
+---------------------------
+
