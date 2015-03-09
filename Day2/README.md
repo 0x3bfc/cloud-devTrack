@@ -1,10 +1,5 @@
-Cloud Computing session 001
----------------------------
-RedHat Open Stack SysAdmin Cl210
-
-
-==================================================
-
+Cloud Computing Development Track Day 2
+----------------------------------------
 9-3-2015
 
 Hypervisors structure:
@@ -16,9 +11,10 @@ Hypervisors structure:
 	
 Tools for virtualizations:
 --------------------------
-1- KVM ----------
-			Linux
-2- Xen	----------- 		
+
+1- KVM ---------->	Linux
+
+2- Xen ----------> Linux	 		
 
 VMware:
 		Vsphere
@@ -29,9 +25,8 @@ RedHat	RHEV
 Windows	Hyper-v
 
 
-
-=======================================
 1- Fully Virtualization 
+--------------------------
 	
 			---------------------------------
 			| Guest	| Windows | Linux OS| ..|
@@ -52,6 +47,8 @@ Windows	Hyper-v
 
 
 2- Para Virtualization
+-----------------------
+
 		------------------------------------
 		Guest OS | Guest OS ...
 		------------------------------------
@@ -72,6 +69,7 @@ Windows	Hyper-v
 		
 		
 3- kernel virtualization
+-------------------------
 
 		- KVM: Enable Hypervisor operation in linux kernel, where KVM provides the 
 				virtualization layer on the same kernel of Host OS
@@ -91,6 +89,7 @@ Windows	Hyper-v
 
 Types of Hypervisor:
 --------------------
+
 Type 1 : Bare-Metal Hypervisor
 
 			-----------------------------------------------
@@ -124,6 +123,7 @@ Type 1 : Bare-Metal Hypervisor
 				- this type of virtualization supports the high availability and data consistancy of service. 
 
 Type 2: Hosted Hypervisor
+
 			-------------------------------------
 			|		|	Guest OS | Guest OS	| ..|
 			|	APP	-----------------------------
@@ -136,3 +136,10 @@ Type 2: Hosted Hypervisor
 
 Network Virtualization:
 -----------------------
+
+	Hardware assistance:
+	
+			improve performance and support virtualization of DMA I/O an memory virtualization 
+			for example VT-x and AMD-V started being introduced  into CPU desgins in 2005
+			
+			
