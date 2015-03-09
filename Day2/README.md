@@ -32,9 +32,8 @@ Vendors:
 		- RedHat
 		- Microsoft
 		
-Types of Virtualization:
-========================
-
+Server Virtualization:
+----------------------
 
 1- Fully Virtualization 
 		
@@ -174,8 +173,8 @@ Notes:
 			for example VT-x and AMD-V started being introduced into CPU desgins in 2005
 
 
-Dynamic Load Balancing:
------------------------
+		Dynamic Load Balancing:
+		-----------------------
 		
 			- Load balancing is used to distribute the load over virtual machines in cluster. 
 			- From network prespective it scales the performance of a server-based program, such as a Web server, by distributing 
@@ -189,18 +188,18 @@ Network Virtualization:
 -----------------------
 		
 		
-				VM1 | VM2			VM3| .......
-				----------			--------------
-				SW switch/Router    SW switch/Router
-				- Using Bridging	- Using Bridging
-				- Using NAT			- Using NAT
-					H1					H2
-				---------			--------------
-				   NIC1			  		NIC2
-				----------			--------------
-					|					|
-					|	--------		|
-					----|SWITCH|---------	
+				VM1 | VM2				VM3| .......
+				----------				--------------
+				Virtual switch/Router    Virtual switch/Router
+				- Using Bridging		- Using Bridging
+				- Using NAT				- Using NAT
+					H1						H2
+				---------				--------------
+				   NIC1			  			NIC2
+				----------				--------------
+					|						|
+					|	--------			|
+					----|SWITCH|-------------	
 						--------										---------		
 							|-------------------------------------------|YOUR PC|
 																		---------	
@@ -243,6 +242,18 @@ Network Virtualization:
 											|
 								PC3--------------------PC4			
 
+
+
+
+Desktop Virtualization:
+-----------------------
+
+	Desktop Virtualization embarces number of technologies with different attributes:
+
+		- Thin Terminal (Thin Client virtualization) is used for remote access
+		- Small provisioning time 
+		- Roaming
+		- Distaster Recovery
 
 Storage Virtualization:
 -----------------------
