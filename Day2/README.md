@@ -145,10 +145,13 @@ Type 1 : Bare-Metal Hypervisor
 
 		Storage:
 		
-				1- Backup: by cloning virtual machine 'Full backup' the same size of the source Virtual machine
-				2- Snapshot: copying of data index but the data still exists, if there is any change (Edit/Delete/Add) in file  
-				   system, copy this change to snapshot, to keep track all changes in file system 
-
+				1. Backup: by cloning virtual machine 'Full backup' the same size of the source Virtual machine
+				2. Snapshot: copying of index but the data still exists, if there is any change (Edit/Delete/Add) in file  
+				   system, copy this change to snapshot, to keep track all changes in file system. according to processes that 
+				   run on virtual machine: when user takes snapshot it follows the "Snapshot Algorithm" or Chandy–Lamport algorithm
+				   is used to track all running processes at specific time and build save all running processes states in vector where 
+				   each process has list of states and communication with other processes on the system.			
+			
 			
 Type 2: Hosted Hypervisor
 
@@ -168,9 +171,21 @@ Notes:
 			for example VT-x and AMD-V started being introduced into CPU desgins in 2005
 
 
+Dynamic Load Balancing:
+-----------------------
+		
+			- Load balancing is used to distribute the load over virtual machines in cluster. 
+			- From network prespective it scales the performance of a server-based program, such as a Web server, by distributing 
+			its client requests across multiple servers within the cluster. As traffic increases, additional servers 
+			can be added to the cluster, with up to 32 servers possible in any one cluster. High availability.
+			- High availability provides: active<------->standby in clustering 
+			- Load balancing provides:	active <--------> active  
+
+
 Network Virtualization:
 -----------------------
-
+		
+		
 
 			
 			
