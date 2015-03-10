@@ -1,6 +1,5 @@
-Cloud Computing Development Track Day 2
-----------------------------------------
-9-3-2015
+Cloud Computing Development Track Day 2 (VEP)
+---------------------------------------------------
 
 Hypervisors structure:
 ----------------------
@@ -9,8 +8,8 @@ Hypervisors structure:
 	Kernel Space
 	HW. Emulator
 	
-Tools for virtualizations:
---------------------------
+Virtualization Tools:
+---------------------
 
 	1. KVM 
 	2. Xen 
@@ -255,11 +254,8 @@ Desktop Virtualization:
 		- Roaming
 		- Distaster Recovery
 
-Storage Virtualization:
------------------------
 
 
 
-Application Virtualization:
----------------------------
+
 
