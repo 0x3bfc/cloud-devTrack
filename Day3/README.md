@@ -247,6 +247,6 @@ Structure of Cloud Services:
 	
 			- Network Devices and Network services such as 'VPN'
 
-	There also different types of cloud services such as CaaS 'communication as a service'.
+	Also, There are different types of cloud services such as CaaS 'communication as a service'.
 	
 	
