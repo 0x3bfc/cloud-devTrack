@@ -96,6 +96,55 @@ Network Virtualization: (Cont.)
 Desktop Virtualization (Cont.)
 -------------------------------
 
+		Workspace virtualization technology
+	
+		- Terminal services multiple user can access application that are hosted on the same operating system
+		- VDI Virtual Desktop Infrastructure: works by attachments user data , application send the operating system from the end point device i.e laptop using 'rdesktop' and desktop using thin client
+
+		Advantages:
+			- more secure
+			- simple administration
+			- more reliable
+			- application streaming
 
 Storage Virtualization:
 -----------------------		
+
+	Types of Storage virtualization:
+	
+		- Block virtualization
+		- File system virtualization.
+		
+	Types of storage:
+	
+		- Enterprise Storage
+		- locally attahced storage
+		- SSD
+		- SAN
+		- NAS
+		- Storage Array
+		- Tapes
+		- removable storage
+		
+		BLOCK VIRTUALIZATION
+		---------------------
+				- Address space remapping: 
+									virtualization of storage provides the location indenpendent solutions. it support lgical
+									space for data storage and handles the processes of mapping them to actual physical storage.
+				- Meta-Data:
+									The mapping information for the virtualized storage called meta-data that needed to be managed
+									and maintaining a consistant view of data.
+				- I/O redirection:
+									The virtualization software or device uses the meta-data to re-direct I/O requests. It will 
+									receive an incoming I/O request containing information about the location of the data in terms of 
+									the logical disk (vdisk) and translates this into a new I/O request to the physical disk location.
+									Ex. Perform a meta-data look up for LUN ID=1, LBA=32, and finds this maps to physical LUN ID=7, LBA0
+				- Replication:
+									When storage is virtualized, replication services must be implemented above the software or 
+									device that is performing the virtualization. This is true because it is only above the 
+									virtualization layer that a true and consistent image of the logical disk (vdisk) can be copied. 
+									This limits the services that some implementations can implement - or makes them seriously 
+									difficult to implement. If the virtualization is implemented in the network or higher, this 
+									renders any replication services provided by the underlying storage controllers useless.
+
+				- 
