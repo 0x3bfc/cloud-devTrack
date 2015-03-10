@@ -200,4 +200,53 @@ Cloud Computing Development Track Day 3 (VEP) Cont.
 		- GDFS (Google distributed file system)
 		 
 		
+
+# Cloud Computing:
+	
+		Cloud Computing is a general term for the delivery of hosted services over the internet 'Utility as a Service'
+	
+		There are main benefits of cloud computing include:
+			
+			- self service provisioning 
+					End users can spin up computing resources for almost any type of worklad on-demand
+			- elasticity 
+					companies can scale upp as a acomputing needs increase and then scale down again as demands decrease.
+
+Types of Cloud Service Provider:
+----------------------------------
+
+	1. Public Cloud
+	2. Private Cloud 
+	3. Hybrid Cloud 
+	
+Structure of Cloud Services:
+----------------------------
+
+	1. IaaS 'Infrastructure as a Service'
+	
+			- Virtual Machines as CPU + RAM + DISK I/O + Network Bandwidth.
+			- Block Storage such as "Volumes and Hard Disks"
 		
+		OpenStack is a platform to create/Management tool for IaaS.
+
+	2. PaaS 'Platform as a Service' 
+	 
+			- databases services
+			- NoSQL services
+			- Docker containers
+			- Web Services
+		
+		OpenShift is a platform to create PaaS services.
+			
+	3. SaaS 'Software as a Service'
+	
+			- Dropbox app storage services.
+			- Google Docs.
+
+	4. NaaS	'Network as a Service'
+	
+			- Network Devices and Network services such as 'VPN'
+
+	There also different types of cloud services such as CaaS 'communication as a service'.
+	
+	
