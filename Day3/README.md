@@ -1,8 +1,7 @@
 Cloud Computing Development Track Day 3 (VEP) Cont.
 ----------------------------------------------------
 
-KVM (Cont.)
------------
+#KVM (Cont.)
 
 	Shared Memory virtualization
 
@@ -12,8 +11,7 @@ KVM (Cont.)
 
 
 
-Application Virtualization:
----------------------------
+#Application Virtualization:
 
 		Containers vs VMs
 		
@@ -60,8 +58,7 @@ Application Virtualization:
 		
 		
 
-Network Virtualization: (Cont.)
--------------------------------
+#Network Virtualization: (Cont.)
 
 		- Access Control List: 
 					provide secure, customized access for individuals and groups to protect enterprise lan from
@@ -93,8 +90,7 @@ Network Virtualization: (Cont.)
 					4- OpenStack "Private Cloud Network virtualization 'neutron'"
 
 
-Desktop Virtualization (Cont.)
--------------------------------
+#Desktop Virtualization (Cont.)
 
 		Workspace virtualization technology
 	
@@ -107,8 +103,7 @@ Desktop Virtualization (Cont.)
 			- more reliable
 			- application streaming
 
-Storage Virtualization:
------------------------		
+#Storage Virtualization:
 
 	Types of Storage virtualization:
 	
@@ -126,7 +121,8 @@ Storage Virtualization:
 		- Tapes
 		- removable storage
 		
-#1- BLOCK VIRTUALIZATION
+1-BLOCK VIRTUALIZATION
+------------------------
 					
 					- Address space remapping: 
 										virtualization of storage provides the location indenpendent solutions. it support lgical
@@ -185,7 +181,8 @@ Storage Virtualization:
 					1- LVM "Logical Volume Management"
 					2- SWIFT in OpenStack 
 			
-# File System Virtualization:
+2-File System Virtualization:
+-----------------------------
 			
 	Filesystem in Userspace (FUSE):
 		
