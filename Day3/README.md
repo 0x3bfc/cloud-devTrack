@@ -126,25 +126,81 @@ Storage Virtualization:
 		- Tapes
 		- removable storage
 		
-		BLOCK VIRTUALIZATION
-		---------------------
-				- Address space remapping: 
-									virtualization of storage provides the location indenpendent solutions. it support lgical
-									space for data storage and handles the processes of mapping them to actual physical storage.
-				- Meta-Data:
-									The mapping information for the virtualized storage called meta-data that needed to be managed
-									and maintaining a consistant view of data.
-				- I/O redirection:
-									The virtualization software or device uses the meta-data to re-direct I/O requests. It will 
-									receive an incoming I/O request containing information about the location of the data in terms of 
-									the logical disk (vdisk) and translates this into a new I/O request to the physical disk location.
-									Ex. Perform a meta-data look up for LUN ID=1, LBA=32, and finds this maps to physical LUN ID=7, LBA0
-				- Replication:
-									When storage is virtualized, replication services must be implemented above the software or 
-									device that is performing the virtualization. This is true because it is only above the 
-									virtualization layer that a true and consistent image of the logical disk (vdisk) can be copied. 
-									This limits the services that some implementations can implement - or makes them seriously 
-									difficult to implement. If the virtualization is implemented in the network or higher, this 
-									renders any replication services provided by the underlying storage controllers useless.
+#1- BLOCK VIRTUALIZATION
+					
+					- Address space remapping: 
+										virtualization of storage provides the location indenpendent solutions. it support lgical
+										space for data storage and handles the processes of mapping them to actual physical storage.
+					- Meta-Data:
+										The mapping information for the virtualized storage called meta-data that needed to be managed
+										and maintaining a consistant view of data.
+					- I/O redirection:
+										The virtualization software or device uses the meta-data to re-direct I/O requests. It will 
+										receive an incoming I/O request containing information about the location of the data in terms of 
+										the logical disk (vdisk) and translates this into a new I/O request to the physical disk location.
+										Ex. Perform a meta-data look up for LUN ID=1, LBA=32, and finds this maps to physical LUN ID=7, LBA0
+					- Replication:
+										When storage is virtualized, replication services must be implemented above the software or 
+										device that is performing the virtualization. This is true because it is only above the 
+										virtualization layer that a true and consistent image of the logical disk (vdisk) can be copied. 
+										This limits the services that some implementations can implement - or makes them seriously 
+										difficult to implement. If the virtualization is implemented in the network or higher, this 
+										renders any replication services provided by the underlying storage controllers useless.
+							
+								Types of Replications:
+										- Remote data replication such as disaster recovery
+										- Snapshots and clones of data
+					- Disk Management:
+								- Thin Provisioning to maximize storage utilization
+								- Disk expansion and shrinking
+					 
 
-				- 
+
+			Advanatages:
+			------------
+					1 - Improved utilization of storage media
+					2 - Fewer points of management
+					
+			disadvantages:
+			--------------
+			
+					1- Once the abstraction layer is in place, only the virtualizer knows where the data actually resides on the physical 
+						medium, this issue known as "Backing out a failed implementation"
+					2- Interoperability and vendor support
+					3- Complexity:
+								- Management of environment
+								- Infrastructure design
+					4- Meta-data management
+					5- Performance and scalability
+				
+					
+			Implementation approaches:
+			--------------------------
+					1. Host-based 			(Removable Disks'Flash Disk', Hard Disks, Tapes ..etc)
+					2. Storage device-based (Storage arrays)
+					3. Network-based		(NAS, and SAN)	
+			
+			Examples:
+			---------
+					1- LVM "Logical Volume Management"
+					2- SWIFT in OpenStack 
+			
+# File System Virtualization:
+			
+	Filesystem in Userspace (FUSE):
+		
+		Filesystem in Userspace (FUSE) is an operating system mechanism for Unix-like computer operating systems that lets 
+		non-privileged users create their own file systems without editing kernel code.
+	
+	Examples:
+	
+		- GlusterFS
+		- Copy-FUSE
+		- SSHFS
+		- HDFS (Hadoop distributed File system)
+		- VirtualBox-fuse
+		- S3FS (Object storage on Amazon Web Service)
+		- GDFS (Google distributed file system)
+		 
+		
+		
