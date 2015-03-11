@@ -1,8 +1,8 @@
 Cloud Computing Development Track Day 4 .
 -----------------------------------------
 
-CLOUD ESSENTIALS
------------------
+#CLOUD ESSENTIALS
+
 
 	- Focus on skills to adopt operation and govern cloud computing effectivlly
 	- identify the charatersitics of cloud computing from business prespective
@@ -14,6 +14,7 @@ CLOUD ESSENTIALS
  
 	Targets:
 	--------		
+
 		- Reduce complixity of landscape
 		- Improve the availability of service, it is relative to SLA.
 		- Working a secure and flexible IT environments to allign with business requirments.
@@ -33,16 +34,16 @@ CLOUD ESSENTIALS
 			storage		 			- storage services				- operations
 			services	 			- Network services
 			interfaces
-	
-		  ----------------------	
-	 ----/		Cloud			\---- 
-	 |		Software services +		|
-	/		H.W + Platforms			\
-	\								/
-	--------------------------------
-					|			|
-					|			|
-					USER 1		USER 2
+							
+								  ----------------------	
+							 ----/		Cloud			\---- 
+							 |		Software services +		|
+							/		H.W + Platforms			\
+							\								/
+							--------------------------------
+											|			|
+											|			|
+											USER 1		USER 2
 	
 	
 		Cloud is based on the concepts in the other hand virtualiztion based on technologies.
@@ -51,7 +52,8 @@ CLOUD ESSENTIALS
 			- Diferent cost model. 
 	
 	
-	Essential characteristics of cloud computing services:
+Essential characteristics of cloud computing services:
+------------------------------------------------------
 	
 		- On-demand slef-service 'automated/scalable services'
 		- broad network access
@@ -70,32 +72,110 @@ CLOUD ESSENTIALS
 		 - virtualization is a technology while cloud is a business concept
 		 - virtualization enabling technology in many cloud services
 	
-	Cloud overcomes problems:
-	--------------------------
+	Not all virtualization must be used a cloud service 	
+	
+Cloud overcomes problems:
+--------------------------
+
 		- running out of capacity
 		- costly and execess capact
 		- much capital tied up in server hardware
 
-	Organization would probably not benefit becuase:
-	------------------------------------------------
+Organization would probably not benefit becuase:
+------------------------------------------------
+
 		- steadly large and fixed workloads 
 		- organization that owns large datacenter
 		- high compliance standards
 		- high degree of operational assurance.
 
-	Cloud Service Models:
-	---------------------
+Cloud Service Models:
+---------------------
 
 		- Software as a service (SaaS)
 		- platform as a service (PaaS)
 		- infrastructure as a service (IaaS)
 	
 
-	Notes:
+			SaaS:
+					User accounts world-wide access global collaboration subscription based.
+			PaaS:
+					Rapid Development 'Mashups' intergating multivendor cloud services
+			IaaS:
+					virtual servers , storage flexible use
+
+Cloud Deployment Models:
+-------------------------
 	
-	Mainframe
-	--------- 
-			- A server has dummy terminals that have the same concept of thin client.
+		- Private Cloud
+		- Public Cloud 
+		- Hybrid Cloud 
+		- Community Cloud
+
+
+
+# Business Prespectives:
+------------------------
+
+New business promisses
+----------------------
+
+		- savings
+		- flexibility
+		- Agility
+		- Greate User Experience.
+
+
+Cloud Computing and Outsourcing
+-------------------------------
+
+	- cloud computing is based on outsource, it is about IT capabilities that are delivered as a service
+	  over a network.
+Key driver of outsourcing:
+--------------------------
+
+				1- on-demand slef-service	63%
+				2- broad netowk access		56%
+				3- resource pooling			44%
+				4- rapid elasticity			23%
+				5- Measured service			21%
+
+
+	- lower cost per server
+	- Higher availability
+	- faster time to market
+	- innovation software solutions
+	- innovation platforms
+	- reduce in capital expanditure
+	
+Cloud Computing and outsourcing common features:
+------------------------------------------------
+
+
+							IT services
+								|
+						---------------------
+						|					|
+					In-source			Out-Source
+											|
+								-------------------------
+								|						|
+							Cloud computing			Traditional Out-source
+
+
+	1- reasons for adoption 'need more innovation than the current organization can handle'.
+	2- External staff					
+	3- Provider-owned assets to reduce Exist strategy regulations
+	4- Vendor Lock-in potential
+	
+	------------------------------------------------------------------------------
+								Cloud computing						Outsourcing
+	------------------------------------------------------------------------------							
+	- Financial Commitment			Shor-Term						Long-Term
+	- HW/SW Customization			True							False
+	- Scalability of Capacity		Scalable						Not scalable
+	- Contract Changes				dynamic							Fixed		
+	-------------------------------------------------------------------------------
 	
 	
 	
