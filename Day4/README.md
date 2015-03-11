@@ -178,4 +178,80 @@ Cloud Computing and outsourcing common features:
 	-------------------------------------------------------------------------------
 	
 	
+
+CIO Top Concerns:
+-------------------
+
+	1- Cost								49%
+	2- Manufacurance					32%
+	3- security							25%
+	4- user experience					19%
+	5- scalability and flexibility		18%
+	6- collaboration					18%
+
+CapEx and OpEx:
+---------------
+
+	Cloud shifts from CapEx to OpEx
+
+	Capital Exenses: 
+			cloud computing derives greater optimization and utilization of IT assets
+	Operational Expenses:
+			public cloud services are billed to the consumers on a pay per use basis
+
+Maintenance:
+-------------
+	Three types of maintenance:
+
+		1- Update
+		2- Upgrade
+		3- Fixes
+
+	Cloud Computing reduces:
+		- technology risks to the business.
+		- Capital expense tied up in obsolete or superfious hardware
+		- staff tied up in legacy maintenance
+
+Security and Risks:
+-------------------
+	
+		"An organisation may have an appetite for some types of risk" 
+	
+	- availability: this informs you about the status of the service and data avialable when required.
+	- Confidentiality: this limits data access to the authorized people 
+	- Integrity: this potects tampering of data and is data trustworthy
+
+	 
+User Experience:
+----------------
+
+	IT applications have business value:
+		
+		- Web-based user interfaces
+		- more recent versions of software
+		- access anywhere anytime 
+		- easy to use and flexible capacity
+
+Collaborations:
+---------------
+	
+		-------------
+		|	Org		| -----------------> Firewall ------VPN---------User / Business partner
+		-------------
+		
+		- remote workers
+		- business partners
+
+Scalability:
+------------
+
+Capacity planning:
+-------------------
+
+		Performance problem							 Costly
+				|										|
+				|										|
+			IaaS Resources		PaaS Resouces		SaaS Resources
+	
+	Capacity depends on the business demands or business patterns.
 	
