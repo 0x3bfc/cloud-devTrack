@@ -75,7 +75,115 @@ Deeper Dive Taxonomy:
 			- Cloud Management provider
 			
 			Virtual Machines:
+			-----------------
 				
 				this layer represent Server Virtualization 
 			- Create virtual server
 			
+			Content Distribution Network:
+			-----------------------------
+				- situation without a CDN notice that every user gets his data direct from central location
+				
+					CLOUD -------------CDN1--------ROUTERS-------User1
+						|
+						----------------CDN2------------ROUTER---------------User in a different location in the world
+						
+				CDN is used to cashe/buffer the content to provide reliable connection with cloud users
+				
+			
+			Cloud Based Storage:
+			--------------------
+				1. Storage is essential to IaaS, Servers won't run without it.
+				2. Storage can be offered in all three service models
+					- IaaS volumes can be attached to servers (Amazon, EBS)
+			
+			Virtual Appliance and Image Manufacturing:
+			------------------------------------------
+			
+				Provisioning			Manufacturing		Components
+				-----------------------------------------------------------
+				Community		--->					-->	REDHAT+SYBASE
+				ISVs			--->					--> 'Combined Options'
+				SI's 			....
+				Teams			
+				people
+				More....		
+				-----------------------------------------------------------
+
+		
+		Cloud Management and Auditing Services:
+		----------------------------------------
+			Performance ----------> Cost ----------> Security ------>
+					|												|
+					Service Orch<-------Configuration	<------------
+					
+		Networking:
+		-------------
+			Locations
+			Bandwidth
+			Latency Tolerance
+			Firewalls and Access Control
+			Resilience Redundancy
+		
+		Automation and self-service:
+		----------------------------
+		
+			Traditional ----> self-service ---> Automation 
+			
+			weeks				days				mins
+		
+		Federated Identity:
+		--------------------
+		
+		
+			Identity provider1				Identity provider1
+			Twitter ----------------------------Facebook
+				|									|
+				----------------|--------------------
+								|
+								OpenID or Oauth
+								
+				SaaS Provider 1  Relaying Party   SaaS provider2
+				
+				
+		
+		Roles of Standards:
+		--------------------
+		- Data Format
+		- Data Storage
+		- Standard VM images
+		- Standard Management API
+		- Identity Information Standards
+		
+			
+		Chanllenge and Risks:
+		----------------------
+					- Application performance.
+					- Cloud Storage
+					- Data Replication alternatives
+						- Replication 
+						- Synchronize
+						- Real-Time lookup
+					- Network Security
+					- Implication for applications:
+					
+						Tradition multi-tier:
+						---------------------
+						- Presentation service "Front-end interface"
+						- Business logic Services "Back-end services"
+						- Database service
+								+
+						- Common Services
+
+		Development  Process:
+		---------------------
+		
+			 Cloud computing changes the landscape
+				- large ecosystem to draw from
+				- Non-functional requirements more easily met
+				- changing risks, New risks
+			 
+			 Instead of design build and order hardware:
+				- configured on existing services
+				
+
